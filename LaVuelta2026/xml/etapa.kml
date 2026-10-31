@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>La Vila Joiosa/Villajoiosa - Alto de Aitana. Costa Blanca</name>
+    <description>Planimetría de la etapa (generada desde etapaEsquema.xml)</description>
+    <Style id="rojo">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon><href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href></Icon>
+      </IconStyle>
+    </Style>
+    <Style id="verde">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon><href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href></Icon>
+      </IconStyle>
+    </Style>
+    <Style id="azul">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon><href>http://maps.google.com/mapfiles/kml/paddle/blu-circle.png</href></Icon>
+      </IconStyle>
+    </Style>
+    <Style id="amarillo">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon><href>http://maps.google.com/mapfiles/kml/paddle/ylw-circle.png</href></Icon>
+      </IconStyle>
+    </Style>
+    <Style id="recorrido">
+      <LineStyle>
+        <color>ffff00ff</color>
+        <width>4</width>
+      </LineStyle>
+    </Style>
+    <Folder>
+      <name>Salida y meta</name>
+      <Placemark>
+        <name>Salida: LA VILA JOIOSA/ VILLAJOYOSA</name>
+        <styleUrl>#rojo</styleUrl>
+        <Point>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-0.231000,38.507000,27.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Meta: ALTO DE AITANA. COSTA BLANCA</name>
+        <styleUrl>#rojo</styleUrl>
+        <Point>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-0.296000,38.653000,1543.0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Puertos de montaña</name>
+      <Placemark>
+        <name>Puerto de Tárbena</name>
+        <description>2ª categoría. Altitud: 700 m</description>
+        <styleUrl>#verde</styleUrl>
+        <Point>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-0.101000,38.690000,700.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Puerto Miserat</name>
+        <description>1ª categoría. Altitud: 980 m</description>
+        <styleUrl>#verde</styleUrl>
+        <Point>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-0.130000,38.800000,980.0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Sprints</name>
+      <Placemark>
+        <name>Benifallim</name>
+        <description>Altitud: 720 m</description>
+        <styleUrl>#azul</styleUrl>
+        <Point>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-0.400000,38.660000,720.0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Puntos anónimos</name>
+      <Placemark>
+        <name>Finestrat</name>
+        <description>Punto anónimo a 7.6 km de la salida</description>
+        <styleUrl>#amarillo</styleUrl>
+        <Point>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-0.212500,38.566940,238.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>La Nucía</name>
+        <description>Punto anónimo a 18.1 km de la salida</description>
+        <styleUrl>#amarillo</styleUrl>
+        <Point>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-0.123060,38.617220,226.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Callosa d'en Sarrià</name>
+        <description>Punto anónimo a 25.0 km de la salida</description>
+        <styleUrl>#amarillo</styleUrl>
+        <Point>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-0.122780,38.651390,200.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bolulla</name>
+        <description>Punto anónimo a 32.2 km de la salida</description>
+        <styleUrl>#amarillo</styleUrl>
+        <Point>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-0.112220,38.676390,400.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parcent</name>
+        <description>Punto anónimo a 49.1 km de la salida</description>
+        <styleUrl>#amarillo</styleUrl>
+        <Point>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-0.065000,38.745560,300.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Orba</name>
+        <description>Punto anónimo a 56.0 km de la salida</description>
+        <styleUrl>#amarillo</styleUrl>
+        <Point>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-0.064440,38.780000,120.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pego</name>
+        <description>Punto anónimo a 66.7 km de la salida</description>
+        <styleUrl>#amarillo</styleUrl>
+        <Point>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-0.117500,38.843060,25.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Quatretondeta</name>
+        <description>Punto anónimo a 101.2 km de la salida</description>
+        <styleUrl>#amarillo</styleUrl>
+        <Point>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-0.316940,38.723610,630.0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Relleu</name>
+        <description>Punto anónimo a 166.3 km de la salida</description>
+        <styleUrl>#amarillo</styleUrl>
+        <Point>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-0.311390,38.587220,400.0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Recorrido</name>
+      <Placemark>
+        <name>Recorrido de la etapa</name>
+        <styleUrl>#recorrido</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>
+            -0.231000,38.507000,27.0
+            -0.212500,38.566940,238.0
+            -0.123060,38.617220,226.0
+            -0.122780,38.651390,200.0
+            -0.112220,38.676390,400.0
+            -0.101000,38.690000,700.0
+            -0.065000,38.745560,300.0
+            -0.064440,38.780000,120.0
+            -0.117500,38.843060,25.0
+            -0.130000,38.800000,980.0
+            -0.316940,38.723610,630.0
+            -0.400000,38.660000,720.0
+            -0.311390,38.587220,400.0
+            -0.296000,38.653000,1543.0
+          </coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

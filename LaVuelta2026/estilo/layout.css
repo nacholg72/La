@@ -1,0 +1,167 @@
+/* ***************************************/
+/*           LaVuelta2026                */
+/*          Estilos layout               */
+/* ***************************************/
+/*    DATOS ESTUDIANTE                   */
+/* --------------------------------------*/
+/*  Nombre y Apellidos:                  */
+/*  Correo electrónico (uniovi):         */
+/*  Grupo de laboratorio:                */
+/* ***************************************/
+
+/* Ejercicio 6: posicionamiento general del proyecto (Grid Areas) */
+
+/*Especificidad: 001*/
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "cabecera"
+        "migas"
+        "contenido"
+        "pie";
+    grid-template-rows: auto auto 1fr auto;
+}
+
+/* Ejercicio 6 y 7: cabecera */
+
+/*Especificidad: 001*/
+header {
+    grid-area: cabecera;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Especificidad: 003*/
+body > header + nav {
+    grid-area: migas;
+}
+
+/*Especificidad: 001*/
+main {
+    grid-area: contenido;
+}
+
+/* Ejercicio 6 y 7: pie */
+
+/*Especificidad: 001*/
+footer {
+    grid-area: pie;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ejercicio 7: ajustes de presentación de la cabecera y el pie */
+
+/*Especificidad: 002*/
+header h1 {
+    margin: 0;
+}
+
+/*Especificidad: 002*/
+footer p {
+    margin: 0;
+}
+
+/* Ejercicio 3: datos personales del ciclista (Flexbox) */
+
+/*Especificidad: 002*/
+section:has(picture) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/*Especificidad: 003*/
+section:has(picture) > h3 {
+    flex-basis: 100%;
+}
+
+/*Especificidad: 003*/
+section:has(picture) > picture {
+    order: 1;
+}
+
+/*Especificidad: 003*/
+section:has(picture) > ul {
+    order: 2;
+    list-style: none;
+}
+
+/* Ejercicio 4: multimedia (Flexbox) */
+
+/*Especificidad: 002*/
+section:has(video) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Ejercicio 5: alineación de corredores (Grid Layout) */
+
+/*Especificidad: 003*/
+section:has(article + article) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 1em;
+}
+
+/*Especificidad: 004*/
+section:has(article + article) > h3 {
+    grid-column: 1 / -1;
+}
+
+/* Ejercicio 9: adaptabilidad general */
+
+/* Tarea 9.1: tabletas */
+@media (max-width: 1024px) {
+
+    /*Especificidad: 003*/
+    section:has(article + article) {
+        grid-template-columns: repeat(2, 1fr); /*ADVERTENCIA: redefinición de la propiedad con valor original repeat(4, 1fr) */
+    }
+
+    /*Especificidad: 001*/
+    header {
+        flex-direction: column;
+        align-items: stretch; /*ADVERTENCIA: redefinición de la propiedad con valor original center */
+    }
+
+    /*Especificidad: 002*/
+    header > nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /*Especificidad: 003*/
+    body > header + nav {
+        display: none;
+    }
+}
+
+/* Tarea 9.2: dispositivos móviles */
+@media (max-width: 768px) {
+
+    /*Especificidad: 003*/
+    section:has(article + article) {
+        grid-template-columns: 1fr; /*ADVERTENCIA: redefinición de la propiedad con valor original repeat(2, 1fr) */
+    }
+
+    /*Especificidad: 002*/
+    header > nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*Especificidad: 001, 001*/
+    video,
+    audio {
+        max-width: 100%;
+    }
+}

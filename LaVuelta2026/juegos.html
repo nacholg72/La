@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>LaVuelta2026: Juegos</title>
+
+    <meta name="author" content="Ignacio Lafuente" />
+    <meta name="description" content="Documento juegos del proyecto LaVuelta2026" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Enlace a las hojas de estilo-->
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+</head>
+
+<body>
+    <!-- contenido de juegos.html  -->
+    <header>
+        <h1>
+            <a href="index.html">LaVuelta2026</a>
+        </h1>
+        <nav>
+            <a href="index.html" title="Página de inicio del proyecto">Inicio</a>
+            <a href="ciclista.html" title="Información sobre el ciclista">Ciclista</a>
+            <a href="equipo.html" title="Información sobre el equipo">Equipo</a>
+            <a href="etapa.html" title="Datos de la etapa">Etapa</a>
+            <a href="meteorologia.html" title="Previsión meteorológica de la etapa">Meteorología</a>
+            <a href="clasificaciones.html" title="Clasificaciones de la carrera">Clasificaciones</a>
+            <a href="juegos.html" title="Juegos relacionados con la competición" aria-current="page">Juegos</a>
+            <a href="ayuda.html" title="Ayuda para usar el sitio">Ayuda</a>
+        </nav>
+    </header>
+
+    <nav aria-label="migas">
+        <ol>
+            <li><a href="index.html">Inicio</a></li>
+            <li>|</li>
+            <li>Juegos</li>
+        </ol>
+    </nav>
+
+    <main>
+        <h2>Juegos</h2>
+
+        <h3>¿Conoces la etapa?</h3>
+        <p>Este juego consta de 10 preguntas sobre la etapa del proyecto. Para responderlas puedes consultar la información de la página Etapa de este sitio, el libro de ruta de La Vuelta 2026 y la web oficial de La Vuelta (www.lavuelta.es). Al terminar, pulsa el botón de enviar.</p>
+
+        <form>
+            <fieldset>
+                <legend>Etapa 9: Preguntas del Juego</legend>
+
+                <p>
+                    <label for="etapa">Número de etapa:</label>
+                    <input type="number" id="etapa" min="1" max="21" />
+                </p>
+
+                <p>
+                    <label for="fecha">Fecha de celebración de la etapa:</label>
+                    <input type="date" id="fecha" min="2026-08-22" max="2026-09-13" />
+                </p>
+
+                <p>
+                    <label for="salida">Lugar de salida de la etapa:</label>
+                    <select id="salida">
+                        <option value="" selected disabled>Seleccione una opción</option>
+                    
+                        <option value="vall-d-alba">Vall d'Alba</option>
+                        <option value="pucol">Puçol</option>
+                        <option value="la-vila-joiosa">La Vila Joiosa</option>
+                        <option value="alcaraz">Alcaraz</option>
+                        <option value="cartagena">Cartagena</option>
+                        <option value="vera">Vera</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="llegada">Lugar de llegada de la etapa:</label>
+                    <select id="llegada">
+                    
+                        <option value="aramon-valdelinares">Aramón Valdelinares</option>
+                        <option value="xeraco">Xeraco</option>
+                        <option value="alto-de-aitana">Alto de Aitana</option>
+                        <option value="elche-de-la-sierra">Elche de la Sierra</option>
+                        <option value="lorca">Lorca</option>
+                        <option value="calar-alto">Calar Alto</option>
+                        <option value="loja">Loja</option>
+                    </select>
+                </p>
+
+                <p>
+                    Tipo de etapa:
+                    <input type="radio" id="tipo-llana" value="llana" />
+                    <label for="tipo-llana">Llana</label>
+                    <input type="radio" id="tipo-media-montana" value="media-montana" />
+                    <label for="tipo-media-montana">Media montaña</label>
+                    <input type="radio" id="tipo-montana" value="montana" />
+                    <label for="tipo-montana">Montaña</label>
+                    <input type="radio" id="tipo-crono-individual" value="contrarreloj-individual" />
+                    <label for="tipo-crono-individual">Contrarreloj individual</label>
+                    <input type="radio" id="tipo-crono-equipos" value="contrarreloj-equipos" />
+                    <label for="tipo-crono-equipos">Contrarreloj por equipos</label>
+                </p>
+                <p>
+                    Hitos presentes en la etapa:
+                    <input type="checkbox" id="hito-puerto" value="puerto-de-montana" />
+                    <label for="hito-puerto">Puerto de montaña</label>
+                    <input type="checkbox" id="hito-especial" value="puerto-categoria-especial" />
+                    <label for="hito-especial">Puerto categoría especial</label>
+                    <input type="checkbox" id="hito-sprint" value="sprint-intermedio" />
+                    <label for="hito-sprint">Sprint intermedio</label>
+                    <input type="checkbox" id="hito-bonificado" value="sprint-bonificado" />
+                    <label for="hito-bonificado">Sprint bonificado</label>
+                    <input type="checkbox" id="hito-ninguno" value="sin-hitos" />
+                    <label for="hito-ninguno">Sin hitos</label>
+                </p>
+                <p>
+                    <label for="dureza">Dureza de la etapa (de 1 a 10):</label>
+                    <input type="range" id="dureza" min="1" max="10" step="1" value="5" />
+                </p>
+
+                <p>
+                    <label for="longitud">Longitud de la etapa (en kilómetros):</label>
+                    <input type="number" id="longitud" min="0" max="300" step="0.1" />
+                </p>
+
+                <p>
+                    <label for="desnivel">Desnivel acumulado de la etapa (en metros):</label>
+                    <input type="number" id="desnivel" min="0" max="10000" step="1" />
+                </p>
+
+                <p>
+                    <label for="descripcion">Describe brevemente la etapa:</label>
+                    <textarea id="descripcion" rows="4" cols="50" maxlength="500"></textarea>
+                </p>
+
+                <p>
+                    <label for="participante">Nombre del participante:</label>
+                    <input type="text" id="participante" maxlength="60" />
+                </p>
+
+                <p>
+                    <button type="submit">Enviar respuestas</button>
+                </p>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>Ignacio Lafuente</p>
+        <address>
+            <a href="mailto:UO308414@uniovi.es">UO308414@uniovi.es</a>
+        </address>
+    </footer>
+</body>
+</html>

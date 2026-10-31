@@ -1,0 +1,115 @@
+/* ***************************************/
+/*             LaVuelta2026              */
+/*          Estilos generales            */
+/* ***************************************/
+/*    DATOS ESTUDIANTE                   */
+/* --------------------------------------*/
+/*  Nombre y Apellidos:  Ignacio Lafuente González*/
+/*  Correo electrónico (uniovi): UO308414@uniovi.es*/
+/*  Grupo de laboratorio: L7             */
+/* ***************************************/
+
+/* ESTUDIO DE LA GAMA CROMÁTICA Y CONTRASTE (WCAG AAA)
+
+   Color Principal (#684B41 - Marrón):
+     - Contraste con fondo blanco (#FFFFFF): 7.86:1 (Cumple nivel AAA)
+     - Contraste con color secundario (#F9F0F5): 7.04:1 (Cumple nivel AAA)
+   
+   Color Secundario (#F9F0F5 - Rosado claro):
+     - Contraste con color principal (#684B41): 7.04:1 (Cumple nivel AAA)
+     - Contraste con texto negro (#000000): 12.16:1 (Cumple nivel AAA)
+   
+   Color Blanco: #FFFFFF
+   Color Negro: #000000*/
+
+/*Especificidad: 010*/
+:root {
+    --color-principal: #684b41;
+    --color-secundario: #f9f0f5;
+    --color-negro: #000000;
+    --color-blanco: #ffffff;
+}
+
+/*Especificidad: 001*/
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--color-blanco);
+    color: var(--color-negro);
+}
+
+/*Especificidad: 001*/
+header {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    padding: 1em;
+}
+
+/*Especificidad: 001*/
+footer {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+}
+
+/* Ejercicio 1: enlaces de la cabecera y el pie */
+
+/*Especificidad: 002, 002*/
+header a,
+footer a {
+    color: var(--color-secundario); /*ADVERTENCIA: color de fondo heredado de header y footer --color-principal */
+    text-decoration: none;
+}
+
+/*Especificidad: 001*/
+h2 {
+    color: var(--color-principal); /*ADVERTENCIA: color de fondo heredado de body --color-blanco */
+}
+
+/*Especificidad: 001*/
+h3 {
+    color: var(--color-principal); /*ADVERTENCIA: color de fondo heredado de body --color-blanco */
+}
+
+/* Ejercicio 2: opción actual del menú de navegación */
+
+/*Especificidad: 013*/
+header nav a[aria-current="page"] {
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    font-weight: bold;
+}
+
+/* Ejercicio 2: migas de navegación */
+
+/*Especificidad: 003*/
+header + nav > ol {
+    font-size: 0.8em;
+    list-style: none;
+}
+
+/*Especificidad: 004*/
+header + nav > ol > li {
+    display: inline;
+}
+
+/*Especificidad: 014*/
+header + nav > ol > li:last-child {
+    font-weight: bold;
+}
+
+/* Ejercicio 3: lista de datos personales del ciclista */
+
+/*Especificidad: 014*/
+section:has(picture) > ul > li:first-child {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/*Especificidad: 014*/
+section:has(picture) > ul > li:nth-child(3) {
+    font-size: 1.5em;
+}
+
+/*Especificidad: 014*/
+section:has(picture) > ul > li:nth-child(4) {
+    font-weight: bold;
+}

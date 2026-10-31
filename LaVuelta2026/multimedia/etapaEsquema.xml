@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<etapa xmlns="http://www.uniovi.es"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.uniovi.es etapa.xsd">
+    <nombre>La Vila Joiosa/Villajoiosa - Alto de Aitana. Costa Blanca</nombre>
+    <numeroEtapa>9</numeroEtapa>
+    <longitud unidad="km">187.4</longitud>
+    <fecha>2026-08-30</fecha>
+
+    <tiempoGanador>PT5H10M40S</tiempoGanador>
+    <velocidadMediaGanador unidad="km/h">36.19</velocidadMediaGanador>
+
+    <desnivel unidad="m">5100</desnivel>
+
+    <lugarSalida>LA VILA JOIOSA/ VILLAJOYOSA</lugarSalida>
+    <lugarLlegada>ALTO DE AITANA. COSTA BLANCA</lugarLlegada>
+
+    <tipoEtapa>montaña</tipoEtapa>
+
+    <referencias>
+        <referencia>https://www.lavuelta.es</referencia>
+        <referencia>https://www.villajoyosa.com/</referencia>
+        <referencia>https://www.wikipedia.org/wiki/Sierra_de_Aitana</referencia>
+    </referencias>
+
+    <fotografias>
+        <foto>Salida.jpg</foto>
+        <foto>MetaAitana.jpg</foto>
+        <foto>PuertoTarbena.jpg</foto> 
+    </fotografias>
+
+    <videos>
+        <video>video1.mp4</video>
+        <video>video2.mp4</video>
+        <video>video3.mp4</video>
+    </videos>
+
+    <podcasts>
+        <podcast>podcast1.mp3</podcast>
+        <podcast>podcast2.mp3</podcast>
+        <podcast>podcast3.mp3</podcast>
+    </podcasts>
+
+    <coordenadasSalida>
+        <longitud unidad="grados">-0.231</longitud>
+        <latitud unidad="grados">38.507</latitud>
+        <altitud unidad="m">27</altitud>
+    </coordenadasSalida>
+
+    <coordenadasMeta>
+        <longitud unidad="grados">-0.296</longitud>
+        <latitud unidad="grados">38.653</latitud>
+        <altitud unidad="m">1543</altitud>
+    </coordenadasMeta>
+
+    <hitos>
+
+        <hito tipo="puertoMontana">
+            <nombreHito>Puerto de Tárbena</nombreHito>
+            <categoria>2ª categoría</categoria>
+            <longitud unidad="grados">-0.101</longitud>
+            <latitud unidad="grados">38.690</latitud>
+            <altitud unidad="m">700</altitud>
+            <distancia unidad="km">36.7</distancia>
+        </hito>
+
+        <hito tipo="puertoMontana">
+            <nombreHito>Puerto Miserat</nombreHito>
+            <categoria>1ª categoría</categoria>
+            <longitud unidad="grados">-0.130</longitud>
+            <latitud unidad="grados">38.800</latitud>
+            <altitud unidad="m">980</altitud>
+            <distancia unidad="km">73.9</distancia>
+        </hito>
+
+        <hito tipo="sprintIntermedio">
+            <nombreHito>Benifallim</nombreHito>
+            <longitud unidad="grados">-0.400</longitud>
+            <latitud unidad="grados">38.660</latitud>
+            <altitud unidad="m">720</altitud>
+            <distancia unidad="km">134.6</distancia>
+        </hito>
+
+    </hitos>
+
+    <puntosAnonimos>
+
+        <punto nombre="Finestrat">
+            <longitud unidad="grados">-0.21250</longitud>
+            <latitud unidad="grados">38.56694</latitud>
+            <altitud unidad="m">238</altitud>
+            <distancia unidad="km">7.6</distancia>
+        </punto>
+
+        <punto nombre="La Nucía">
+            <longitud unidad="grados">-0.12306</longitud>
+            <latitud unidad="grados">38.61722</latitud>
+            <altitud unidad="m">226</altitud>
+            <distancia unidad="km">18.1</distancia>
+        </punto>
+
+        <punto nombre="Callosa d'en Sarrià">
+            <longitud unidad="grados">-0.12278</longitud>
+            <latitud unidad="grados">38.65139</latitud>
+            <altitud unidad="m">200</altitud>
+            <distancia unidad="km">25.0</distancia>
+        </punto>
+
+        <punto nombre="Bolulla">
+            <longitud unidad="grados">-0.11222</longitud>
+            <latitud unidad="grados">38.67639</latitud>
+            <altitud unidad="m">400</altitud>
+            <distancia unidad="km">32.2</distancia>
+        </punto>
+
+        <punto nombre="Parcent">
+            <longitud unidad="grados">-0.06500</longitud>
+            <latitud unidad="grados">38.74556</latitud>
+            <altitud unidad="m">300</altitud>
+            <distancia unidad="km">49.1</distancia>
+        </punto>
+
+        <punto nombre="Orba">
+            <longitud unidad="grados">-0.06444</longitud>
+            <latitud unidad="grados">38.78000</latitud>
+            <altitud unidad="m">120</altitud>
+            <distancia unidad="km">56.0</distancia>
+        </punto>
+
+        <punto nombre="Pego">
+            <longitud unidad="grados">-0.11750</longitud>
+            <latitud unidad="grados">38.84306</latitud>
+            <altitud unidad="m">25</altitud>
+            <distancia unidad="km">66.7</distancia>
+        </punto>
+
+        <punto nombre="Quatretondeta">
+            <longitud unidad="grados">-0.31694</longitud>
+            <latitud unidad="grados">38.72361</latitud>
+            <altitud unidad="m">630</altitud>
+            <distancia unidad="km">101.2</distancia>
+        </punto>
+
+        <punto nombre="Relleu">
+            <longitud unidad="grados">-0.31139</longitud>
+            <latitud unidad="grados">38.58722</latitud>
+            <altitud unidad="m">400</altitud>
+            <distancia unidad="km">166.3</distancia>
+        </punto>
+
+    </puntosAnonimos>
+
+    <clasificacionEtapa>
+
+        <corredor>
+            <nombreCorredor>Enric Mas</nombreCorredor>
+            <tiempo>PT5H10M40S</tiempo>
+        </corredor>
+
+        <corredor>
+            <nombreCorredor>Oscar Onley</nombreCorredor>
+            <tiempo>PT5H10M40S</tiempo>
+            <diferencia>PT0S</diferencia>
+        </corredor>
+
+        <corredor>
+            <nombreCorredor>Primoz Roglic</nombreCorredor>
+            <tiempo>PT5H10M52S</tiempo>
+            <diferencia>PT12S</diferencia>
+        </corredor>
+
+    </clasificacionEtapa>
+
+    <clasificacionGeneral>
+
+        <corredor>
+            <nombreCorredor>Enric Mas</nombreCorredor>
+            <tiempo>PT28H34M3S</tiempo>
+        </corredor>
+
+        <corredor>
+            <nombreCorredor>Primoz Roglic</nombreCorredor>
+            <tiempo>PT28H35M21S</tiempo>
+            <diferencia>PT1M18S</diferencia>
+        </corredor>
+
+        <corredor>
+            <nombreCorredor>Felix Gall</nombreCorredor>
+            <tiempo>PT28H35M42S</tiempo>
+            <diferencia>PT1M39S</diferencia>
+        </corredor>
+
+    </clasificacionGeneral>
+
+    <clasificacionEquipos>
+
+        <equipo>
+            <nombreEquipo>Movistar Team</nombreEquipo>
+            <tiempo>PT85H20M</tiempo>
+        </equipo>
+
+        <equipo>
+            <nombreEquipo>Netcompany INEOS</nombreEquipo>
+            <tiempo>PT85H22M10S</tiempo>
+            <diferencia>PT2M10S</diferencia>
+        </equipo>
+
+        <equipo>
+            <nombreEquipo>Decathlon CMA CGM Team</nombreEquipo>
+            <tiempo>PT85H25M45S</tiempo>
+            <diferencia>PT5M45S</diferencia>
+        </equipo>
+
+    </clasificacionEquipos>
+</etapa>

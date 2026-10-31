@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns="http://tempuri.org/etapa" elementFormDefault="qualified" targetNamespace="http://tempuri.org/etapa" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="tipoLongitud">
+		<xs:restriction base="xs:decimal">
+		<xs:minInclusive value="1"/>
+		<xs:maxInclusive value="400"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:element name="etapa">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nombre" />
+				<xs:element ref="numeroEtapa" />
+				<xs:element ref="longitud" />
+				<xs:element ref="fecha" />
+				<xs:element ref="tiempoGanador" />
+				<xs:element ref="velocidadMediaGanador" />
+				<xs:element ref="desnivel" />
+				<xs:element ref="lugarSalida" />
+				<xs:element ref="lugarLlegada" />
+				<xs:element ref="tipoEtapa" />
+				<xs:element ref="referencias" />
+				<xs:element ref="fotografias" />
+				<xs:element ref="videos" />
+				<xs:element ref="podcasts" />
+				<xs:element ref="coordenadasSalida" />
+				<xs:element ref="coordenadasMeta" />
+				<xs:element ref="hitos" />
+				<xs:element ref="puntosAnonimos" />
+				<xs:element ref="clasificacionEtapa" />
+				<xs:element ref="clasificacionGeneral" />
+				<xs:element ref="clasificacionEquipos" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="nombre" type="xs:string" />
+	<xs:element name="numeroEtapa" type="xs:positiveInteger"/>
+	<xs:element name="longitud">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="tipoLongitud">
+					<xs:attribute name="unidad" type="xs:string" use="required" />
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="km"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="fecha" type="xs:date" />
+	<xs:element name="tiempoGanador" type="xs:string" />
+	<xs:element name="velocidadMediaGanador">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="unidad" type="xs:string" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="desnivel">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="unidad" type="xs:string" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="lugarSalida" type="xs:string" />
+	<xs:element name="lugarLlegada" type="xs:string" />
+	<xs:element name="tipoEtapa" type="xs:string" />
+	<xs:element name="referencias">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="referencia" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="referencia" type="xs:anyURI"/>
+	<xs:element name="fotografias">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="foto" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="foto" type="xs:string" />
+	<xs:element name="videos">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="video" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="video" type="xs:string" />
+	<xs:element name="podcasts">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="podcast" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="podcast" type="xs:string" />
+	<xs:element name="coordenadasSalida">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="longitud" />
+				<xs:element ref="latitud" />
+				<xs:element ref="altitud" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="coordenadasMeta">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="longitud" />
+				<xs:element ref="latitud" />
+				<xs:element ref="altitud" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="latitud">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="unidad" type="xs:p" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="altitud">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="unidad" type="xs:string" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="hitos">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="hito" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="hito">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nombreHito" />
+				<xs:element minOccurs="0" maxOccurs="1" ref="categoria" />
+				<xs:element ref="longitud" />
+				<xs:element ref="latitud" />
+				<xs:element ref="altitud" />
+				<xs:element ref="distancia" />
+			</xs:sequence>
+			<xs:attribute name="tipo" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:NMTOKEN">
+						<xs:enumeration value="puertoMontana" />
+						<xs:enumeration value="sprintIntermedio" />
+						<xs:enumeration value="sprintBonificado" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="nombreHito" type="xs:string" />
+	<xs:element name="categoria" type="xs:string" />
+	<xs:element name="distancia">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="unidad" type="xs:string" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="puntosAnonimos">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="punto" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="punto">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="longitud" />
+				<xs:element ref="latitud" />
+				<xs:element ref="altitud" />
+				<xs:element ref="distancia" />
+			</xs:sequence>
+			<xs:attribute name="nombre" type="xs:string" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="clasificacionEtapa">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="corredor" />
+				<xs:element ref="corredor" />
+				<xs:element ref="corredor" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="clasificacionGeneral">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="corredor" />
+				<xs:element ref="corredor" />
+				<xs:element ref="corredor" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="clasificacionEquipos">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="equipo" />
+				<xs:element ref="equipo" />
+				<xs:element ref="equipo" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="corredor">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nombreCorredor" />
+				<xs:element ref="tiempo" />
+				<xs:element minOccurs="0" maxOccurs="1" ref="diferencia" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="nombreCorredor" type="xs:string" />
+	<xs:element name="tiempo" type="xs:string" />
+	<xs:element name="diferencia" type="xs:string" />
+	<xs:element name="equipo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nombreEquipo" />
+				<xs:element ref="tiempo" />
+				<xs:element minOccurs="0" maxOccurs="1" ref="diferencia" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="nombreEquipo" type="xs:string" />
+</xs:schema>

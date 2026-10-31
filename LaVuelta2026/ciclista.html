@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>LaVuelta2026: Ciclista</title>
+
+    <meta name="author" content="Ignacio Lafuente" />
+    <meta name="description" content="Documento ciclista del proyecto LaVuelta2026" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="multimedia/favicon.ico" type="image/x-icon" />
+
+    <!-- Enlace a las hojas de estilo -->
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+</head>
+
+<body>
+    <header>
+        <h1>
+            <a href="index.html">LaVuelta2026</a>
+        </h1>
+        <nav>
+            <a href="index.html" title="Página de inicio del proyecto">Inicio</a>
+            <a href="ciclista.html" title="Información sobre el ciclista" aria-current="page">Ciclista</a>
+            <a href="equipo.html" title="Información sobre el equipo">Equipo</a>
+            <a href="etapa.html" title="Datos de la etapa">Etapa</a>
+            <a href="meteorologia.html" title="Previsión meteorológica de la etapa">Meteorología</a>
+            <a href="clasificaciones.html" title="Clasificaciones de la carrera">Clasificaciones</a>
+            <a href="juegos.html" title="Juegos relacionados con la competición">Juegos</a>
+            <a href="ayuda.html" title="Ayuda para usar el sitio">Ayuda</a>
+        </nav>
+    </header>
+
+    
+
+    <nav aria-label="migas">
+        <ol>
+            <li><a href="index.html">Inicio</a></li>
+            <li>|</li>
+            <li>Ciclista</li>
+        </ol>
+    </nav>
+
+        <main>
+            <h2>Jørgen Nordhagen</h2>
+
+            <section>
+                <h3>Datos personales</h3>
+                <ul>
+                    <li>Jørgen Nordhagen</li>
+                    <li>10 de enero de 2005</li>
+                    <li>Noruega</li>
+                    <li>TEAM VISMA | LEASE A BIKE/ned</li>
+                    <li>Dorsal: 37</li>
+                </ul>
+
+                <picture>
+                    <source srcset="multimedia/ciclista_150x227.png" media="(max-width: 768px)" width="150"
+                        height="227" />
+                    <source srcset="multimedia/ciclista_grande_600x910.png" media="(max-width: 1024px)" width="600"
+                        height="910" />
+                    <img src="multimedia/JorgenNordhagen.png"
+                        alt="Fotografía de Jørgen Nordhagen con el maillot de su equipo" width="175" height="255" />
+                </picture>
+            </section>
+
+            <section>
+                <h3>Multimedia</h3>
+                <p>Equipo <a href="https://www.lavuelta.es/es/equipo/TVL/team-visma-lease-a-bike">TEAM VISMA | LEASE A
+                        BIKE</a> en la Vuelta Ciclista a España 2026.</p>
+
+                <video controls poster="multimedia/Equipo.png" width="480">
+                    <source src="multimedia/presentacionEquipo.webm" type="video/webm" />
+                    <source src="multimedia/presentacionEquipo.mp4" type="video/mp4" />
+                    Tu navegador no soporta el reproductor de vídeo.
+                </video>
+
+                <audio controls>
+                    <source src="multimedia/historiaEquipo.mp3" type="audio/mpeg" />
+                    <source src="multimedia/historiaEquipo.wav" type="audio/wav" />
+                    Tu navegador no soporta el reproductor de audio.
+                </audio>
+            </section>
+
+            <section>
+                <h3>Datos equipos</h3>
+                <ol>
+                    <li>TEAM VISMA | LEASE A BIKE/ned</li>
+                    <li>Team NTG/Uno-X</li>
+                </ol>
+            </section>
+
+            <section>
+                <h3>Temporada 2025</h3>
+                <table>
+                    <tr>
+                        <th scope="col" id="dato">Nombre del Dato</th>
+                        <th scope="col" id="resultado">Resultado</th>
+                    </tr>
+                    <tr>
+                        <td headers="dato">Victorias de etapa</td>
+                        <td headers="resultado">1</td>
+                    </tr>
+                    <tr>
+                        <td headers="dato">Podios de etapa</td>
+                        <td headers="resultado">3</td>
+                    </tr>
+                    <tr>
+                        <td headers="dato">Top 5 de etapa</td>
+                        <td headers="resultado">5</td>
+                    </tr>
+                    <tr>
+                        <td headers="dato">Top 10 de etapa</td>
+                        <td headers="resultado">7</td>
+                    </tr>
+                    <tr>
+                        <td headers="dato">Tour de l´Avenir</td>
+                        <td headers="resultado">3º</td>
+                    </tr>
+                    <tr>
+                        <td headers="dato">Giro Next Gen</td>
+                        <td headers="resultado">4º</td>
+                    </tr>
+                </table>
+            </section>
+        </main>
+
+        <footer>
+            <p>Ignacio Lafuente</p>
+            <address>
+                <a href="mailto:UO308414@uniovi.es">UO308414@uniovi.es</a>
+            </address>
+        </footer>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!ELEMENT etapa (
+nombre,
+numeroEtapa,
+longitud,
+fecha,
+tiempoGanador,
+velocidadMediaGanador,
+desnivel,
+lugarSalida,
+lugarLlegada,
+tipoEtapa,
+referencias,
+fotografias,
+videos,
+podcasts,
+coordenadasSalida,
+coordenadasMeta,
+hitos,
+puntosAnonimos,
+clasificacionEtapa,
+clasificacionGeneral,
+clasificacionEquipos
+)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT numeroEtapa (#PCDATA)>
+
+<!ELEMENT longitud (#PCDATA)>
+<!ATTLIST longitud unidad CDATA #REQUIRED>
+
+<!ELEMENT fecha (#PCDATA)>
+
+<!ELEMENT tiempoGanador (#PCDATA)>
+<!ELEMENT velocidadMediaGanador (#PCDATA)>
+<!ATTLIST velocidadMediaGanador unidad CDATA #REQUIRED>
+<!ELEMENT desnivel (#PCDATA)>
+<!ATTLIST desnivel unidad CDATA #REQUIRED>
+<!ELEMENT lugarSalida (#PCDATA)>
+<!ELEMENT lugarLlegada (#PCDATA)>
+<!ELEMENT tipoEtapa (#PCDATA)>
+<!ELEMENT referencias (referencia+)>
+<!ELEMENT referencia (#PCDATA)>
+<!ELEMENT fotografias (foto+)>
+<!ELEMENT foto (#PCDATA)>
+<!ELEMENT videos (video+)>
+<!ELEMENT video (#PCDATA)>
+<!ELEMENT podcasts (podcast+)>
+<!ELEMENT podcast (#PCDATA)>
+<!ELEMENT coordenadasSalida (longitud, latitud, altitud)>
+<!ELEMENT coordenadasMeta (longitud, latitud, altitud)>
+
+<!ATTLIST longitud unidad CDATA #REQUIRED>
+<!ELEMENT latitud (#PCDATA)>
+<!ATTLIST latitud unidad CDATA #REQUIRED>
+<!ELEMENT altitud (#PCDATA)>
+<!ATTLIST altitud unidad CDATA #REQUIRED>
+<!ELEMENT hitos (hito+)>
+<!ELEMENT hito (
+nombreHito,
+categoria?,
+longitud,
+latitud,
+altitud,
+distancia
+)>
+
+<!ATTLIST hito tipo (puertoMontana|sprintIntermedio|sprintBonificado) #REQUIRED>
+
+<!ELEMENT nombreHito (#PCDATA)>
+<!ELEMENT categoria (#PCDATA)>
+
+<!ELEMENT distancia (#PCDATA)>
+<!ATTLIST distancia unidad CDATA #REQUIRED>
+
+<!ELEMENT puntosAnonimos (punto+)>
+
+<!ELEMENT punto (
+longitud,
+latitud,
+altitud,
+distancia
+)>
+<!ATTLIST punto nombre CDATA #IMPLIED>
+
+<!ELEMENT clasificacionEtapa (corredor, corredor, corredor)>
+<!ELEMENT clasificacionGeneral (corredor, corredor, corredor)>
+<!ELEMENT clasificacionEquipos (equipo, equipo, equipo)>
+
+<!ELEMENT corredor (nombreCorredor, tiempo, diferencia?)>
+<!ELEMENT nombreCorredor (#PCDATA)>
+<!ELEMENT tiempo (#PCDATA)>
+<!ELEMENT diferencia (#PCDATA)>
+
+<!ELEMENT equipo (nombreEquipo, tiempo, diferencia?)>
+<!ELEMENT nombreEquipo (#PCDATA)>

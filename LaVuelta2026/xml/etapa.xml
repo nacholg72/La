@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE etapa SYSTEM "etapa.dtd">
+
+
+<etapa>
+    <nombre>La Vila Joiosa/Villajoiosa - Alto de Aitana. Costa Blanca</nombre>
+    <numeroEtapa>9</numeroEtapa>
+    <longitud unidad ="km">187.4</longitud>
+    <fecha>2026-08-30</fecha>
+
+    <tiempoGanador>x</tiempoGanador>
+    <velocidadMediaGanador unidad="km/h">x</velocidadMediaGanador>
+
+    <desnivel unidad="m">5100</desnivel>
+
+    <lugarSalida>LA VILA JOIOSA/ VILLAJOYOSA</lugarSalida>
+    <lugarLlegada>ALTO DE AITANA. COSTA BLANCA</lugarLlegada>
+
+    <tipoEtapa>montaña</tipoEtapa>
+
+    <referencias>
+        <referencia>https://www.lavuelta.es</referencia>
+        <referencia>https://www.villajoyosa.com/</referencia>
+        <referencia>https://www.wikipedia.org/wiki/Sierra_de_Aitana</referencia>
+    </referencias>
+
+    <fotografias>
+        <foto>Salida.jpg</foto>
+        <foto>MetaAitana.jpg</foto>
+        <foto>PuertoTarbena.jpg</foto> 
+    </fotografias>
+
+    <videos>
+        <video>video1.mp4</video>
+        <video>video2.mp4</video>
+        <video>video3.mp4</video>
+    </videos>
+
+    <podcasts>
+        <podcast>podcast1.mp3</podcast>
+        <podcast>podcast2.mp3</podcast>
+        <podcast>podcast3.mp3</podcast>
+    </podcasts>
+
+    <coordenadasSalida>
+        <longitud unidad="grados">-0.231</longitud>
+        <latitud unidad="grados">38.507</latitud>
+        <altitud unidad="m">27</altitud>
+    </coordenadasSalida>
+
+    <coordenadasMeta>
+        <longitud unidad="grados">-0.296</longitud>
+        <latitud unidad="grados">38.653</latitud>
+        <altitud unidad="m">1543</altitud>
+    </coordenadasMeta>
+
+    <hitos>
+
+        <hito tipo="puertoMontana">
+            <nombreHito>Puerto de Tárbena</nombreHito>
+            <categoria>2ª categoría</categoria>
+            <longitud unidad="grados">-0.101</longitud>
+            <latitud unidad="grados">38.690</latitud>
+            <altitud unidad="m">700</altitud>
+            <distancia unidad="km">36.7</distancia>
+        </hito>
+
+        <hito tipo="puertoMontana">
+            <nombreHito>Puerto Miserat</nombreHito>
+            <categoria>1ª categoría</categoria>
+            <longitud unidad="grados">-0.130</longitud>
+            <latitud unidad="grados">38.800</latitud>
+            <altitud unidad="m">980</altitud>
+            <distancia unidad="km">73.9</distancia>
+        </hito>
+
+        <hito tipo="sprintIntermedio">
+            <nombreHito>Benifallim</nombreHito>
+            <longitud unidad="grados">-0.400</longitud>
+            <latitud unidad="grados">38.660</latitud>
+            <altitud unidad="m">720</altitud>
+            <distancia unidad="km">134.6</distancia>
+        </hito>
+
+    </hitos>
+
+    <puntosAnonimos>
+
+        <punto nombre="P1">
+            <longitud unidad="grados">-0.180</longitud>
+            <latitud unidad="grados">38.570</latitud>
+            <altitud unidad="m">120</altitud>
+            <distancia unidad="km">10</distancia>
+        </punto>
+
+        <punto nombre="P2">
+            <longitud unidad="grados">-0.250</longitud>
+            <latitud unidad="grados">38.620</latitud>
+            <altitud unidad="m">250</altitud>
+            <distancia unidad="km">40</distancia>
+        </punto>
+
+    </puntosAnonimos>
+
+    <clasificacionEtapa>
+
+        <corredor>
+            <nombreCorredor>Enric Mas</nombreCorredor>
+            <tiempo>05:10:40</tiempo>
+        </corredor>
+
+        <corredor>
+            <nombreCorredor>Oscar Onley</nombreCorredor>
+            <tiempo>05:10:40</tiempo>
+            <diferencia>00:00</diferencia>
+        </corredor>
+
+        <corredor>
+            <nombreCorredor>Primoz Roglic</nombreCorredor>
+            <tiempo>05:10:52</tiempo>
+            <diferencia>00:12</diferencia>
+        </corredor>
+
+    </clasificacionEtapa>
+
+    <clasificacionGeneral>
+
+        <corredor>
+            <nombreCorredor>Enric Mas</nombreCorredor>
+            <tiempo>28:34:03</tiempo>
+        </corredor>
+
+        <corredor>
+            <nombreCorredor>Primoz Roglic</nombreCorredor>
+            <tiempo>28:35:21</tiempo>
+            <diferencia>01:18</diferencia>
+        </corredor>
+
+        <corredor>
+            <nombreCorredor>Felix Gall</nombreCorredor>
+            <tiempo>28:35:42</tiempo>
+            <diferencia>01:39</diferencia>
+        </corredor>
+
+    </clasificacionGeneral>
+
+    <clasificacionEquipos>
+
+        <equipo>
+            <nombreEquipo>Movistar Team</nombreEquipo>
+            <tiempo>85:20:00</tiempo>
+        </equipo>
+
+        <equipo>
+            <nombreEquipo>Netcompany INEOS</nombreEquipo>
+            <tiempo>85:22:10</tiempo>
+            <diferencia>02:10</diferencia>
+        </equipo>
+
+        <equipo>
+            <nombreEquipo>Decathlon CMA CGM Team</nombreEquipo>
+            <tiempo>85:25:45</tiempo>
+            <diferencia>05:45</diferencia>
+        </equipo>
+
+    </clasificacionEquipos>
+</etapa>
